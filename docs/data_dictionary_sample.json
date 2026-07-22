@@ -1,1 +1,22 @@
-
+{
+  "catalog_version": "1.0.0",
+  "last_updated": "2026-07-22",
+  "tables": [
+    {
+      "table_name": "raw_user_events",
+      "data_owner": "Data Engineering Team",
+      "data_steward": "Governance Office",
+      "contains_pii": true,
+      "pii_columns": ["email", "ip_address"],
+      "retention_days": 90
+    },
+    {
+      "table_name": "user_feature_store",
+      "data_owner": "ML Platform Team",
+      "data_steward": "Governance Office",
+      "contains_pii": false,
+      "pii_columns": [],
+      "retention_days": 365
+    }
+  ]
+}
